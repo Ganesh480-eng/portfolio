@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh C | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="overlay"></div>
+        <div class="container">
+            <nav>
+                <span class="logo">
+                    <span class="logo-g">G</span>anesh.<span style="color:#ff7200;">C</span>
+                </span>
+                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header_text">
+                <h1 class="gradient-text">Welcome to My Portfolio</h1>
+                <p>I'm <span style="color: red;">Ganesh</span>, curious, creative, and driven <br> to build meaningful digital experiences.</p>
+                <div class="cta-group">
+                    <a class="btn primary" href="#portfolio">My Projects</a>
+                    <a class="btn ghost" href="#contact">Contact Me</a>
+                </div>
+                <div class="header-links">
+                    <a href="mailto:ganeshgani480580680@gmail.com" title="Email"><img src="https://img.icons8.com/ios-filled/30/ff7200/new-post.png"/></a>
+                    <a href="https://linkedin.com/in/ganesh-c-67a119335" target="_blank" title="LinkedIn"><img src="https://img.icons8.com/ios-filled/30/ff7200/linkedin.png"/></a>
+                    <a href="https://github.com/Ganesh480-eng/my-html" target="_blank" title="GitHub"><img src="https://img.icons8.com/ios-filled/30/ff7200/github.png"/></a>
+                </div>
+                <div class="scroll-indicator" aria-hidden="true">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="fab-group">
+            <a class="fab fab-primary" href="#contact" title="Contact Me" aria-label="Contact Me">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+                    <path d="m22 7-10 7L2 7"/>
+                </svg>
+            </a>
+            <a class="fab fab-secondary" href="#portfolio" title="My Projects" aria-label="My Projects">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 7h5l2 2h11v9a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1 reveal">
+                    <img src="ganesh2.jpg" width="500" alt="Ganesh">
+                </div>
+                <div class="about-col-2 reveal">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>
+                        Information Science and Engineering student with expertise in HTML, CSS, JavaScript, and data structures, and a state-level award in a physics project on waste-to-electricity generation. Seeking a tech internship to apply web development and AgriTech skills to innovative solutions.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML5, CSS3, JavaScript</span><br>Modern web development</li>
+                            <li><span>Python, Java, C</span><br>Programming & scripting</li>
+                            <li><span>UI/UX Design</span><br>Wireframing, prototyping, Figma</li>
+                            <li><span>Connecting People</span><br>Building digital communities & collaboration</li>
+                            <li><span>Problem Solver & DSA Enthusiast</span><br>Efficient algorithms and data structures</li>
+                            <li><span>Tools</span><br>Git, VS Code, IntelliJ IDEA, LaTeX</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Frontend Developer Intern</span><br>Origin, Bangalore, 2025<br>Worked on building responsive user interfaces and improving user experience for client projects using React and modern CSS.</li>
+                            <li><span>Networking Manager</span><br>SoftTechie Club, 2024-Present<br>Organized events and fostered connections among tech enthusiasts.</li>
+                            <li><span>Open Source Contributor</span><br>GitHub & community projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>B.E. in Information Science and Engineering</span><br>Bangalore Institute of Technology, Expected: May 2028<br>1st Semester SGPA: 9.7/10</li>
+                            <li><span>Relevant Coursework</span><br>Python Programming, Web Development, Data Structures</li>
+                            <li><span>Karnataka State Board</span><br>Class 12: 97% (2024), Class 11: 98% (2023), Class 10: 98% (2022)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_title">Services</h1>
+            <div class="row services-row">
+                <div class="service-col reveal">
+                    <span class="service-icon">💻</span>
+                    <h3>Web Development</h3>
+                    <p>
+                        Fast, scalable, and responsive websites using HTML5, CSS3, JavaScript. Clean code, SEO optimization, and cross-browser compatibility.
+                    </p>
+                </div>
+                <div class="service-col reveal">
+                    <span class="service-icon">🎨</span>
+                    <h3>Web Design</h3>
+                    <p>
+                        Visually appealing and user-friendly website designs. UI/UX design, wireframing, prototyping, and engaging layouts using Figma and Adobe XD.
+                    </p>
+                </div>
+                <div class="service-col reveal">
+                    <span class="service-icon">🤝</span>
+                    <h3>Connecting People</h3>
+                    <p>
+                        Building digital communities, organizing tech events, and fostering collaboration among students and professionals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects / Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">Projects</h1>
+            <div class="row services-row">
+                <div class="service-col reveal">
+                    <span class="service-icon">🌱</span>
+                    <h3>AgriTech Farmer Connect Platform</h3>
+                    <p>
+                        Developed a web-based platform to connect farmers with buyers, featuring crop listings and market insights using Node.js, Express, and MongoDB for backend. Built responsive front-end with HTML, CSS, and JavaScript. Presented at RVCE Competition 2025.
+                    </p>
+                </div>
+                <div class="service-col reveal">
+                    <span class="service-icon">💊</span>
+                    <h3>Medicyle – Medication Recycling</h3>
+                    <p>
+                        Created a web app to promote medication recycling, featuring interactive forms, maps, and a carbon footprint calculator. Advanced to college-level round in SAP Octopus among 50+ teams.
+                    </p>
+                </div>
+                <div class="service-col reveal">
+                    <span class="service-icon">⚡</span>
+                    <h3>Waste-to-Electricity Generation</h3>
+                    <p>
+                        Developed a model to convert waste to electricity, integrating physics principles and sustainable technology, earning state-level recognition in 2025.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements & Extracurriculars -->
+    <div id="achievements">
+        <div class="container">
+            <h1 class="sub_title">Achievements & Extracurriculars</h1>
+            <div class="row services-row">
+                <div class="service-col reveal">
+                    <span class="service-icon">🏆</span>
+                    <h3>Achievements</h3>
+                    <ul style="text-align:left; margin: 0 auto; max-width: 90%;">
+                        <li>Golden Topper Award for top academic performance in Pre-University (Class 11 and 12), Karnataka State Board (2023–2024).</li>
+                        <li>Won state-level physics project competition on waste-to-electricity generation (2025).</li>
+                        <li>Advanced to college-level round in SAP Octopus for Medicyle among 50+ teams (2025).</li>
+                    </ul>
+                </div>
+                <div class="service-col reveal">
+                    <span class="service-icon">🤝</span>
+                    <h3>Extracurriculars</h3>
+                    <ul style="text-align:left; margin: 0 auto; max-width: 90%;">
+                        <li>Contributor, HackFest SAP, organized SAP Octopus event to promote innovation (2025).</li>
+                        <li>Member, SoftTechie Club, exploring tech-driven solutions (2025).</li>
+                    </ul>
+                </div>
+                <div class="service-col reveal">
+                    <span class="service-icon">🧑‍💻</span>
+                    <h3>Soft Skills</h3>
+                    <ul style="text-align:left; margin: 0 auto; max-width: 90%;">
+                        <li>Teamwork</li>
+                        <li>Communication</li>
+                        <li>Problem-Solving</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub_title">Contact Me</h1>
+            <div class="contact-form-wrapper">
+                <div class="about-col-2">
+                    <p>
+                        <strong>Email:</strong> ganeshgani480580680@gmail.com<br>
+                        <strong>Phone:</strong> (+91) 9606599562<br>
+                        <strong>Location:</strong> Bangalore, India<br>
+                        <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ganesh-c-67a119335" target="_blank" style="color:#ff7200;">linkedin.com/in/ganesh-c-67a119335</a><br>
+                        <strong>GitHub:</strong> <a href="https://github.com/Ganesh480-eng/my-html" target="_blank" style="color:#ff7200;">github.com/Ganesh480-eng/my-html</a>
+                    </p>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab Script -->
+    <script>
+        // Contact form animation on load
+        window.onload = function() {
+            document.querySelector('.contact-form-wrapper').classList.add('show');
+        };
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname, event){
+            for(var tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(var tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Mobile nav toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', function() {
+                const isOpen = navLinks.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+            navLinks.querySelectorAll('a').forEach(function(link){
+                link.addEventListener('click', function(){
+                    navLinks.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        // Reveal on scroll
+        const revealEls = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+            revealEls.forEach((el) => io.observe(el));
+        } else {
+            revealEls.forEach((el) => el.classList.add('visible'));
+        }
+
+        // Ripple positioning for .btn and .fab
+        function attachRipplePositioning(selector) {
+            document.querySelectorAll(selector).forEach(function(el){
+                el.addEventListener('pointerdown', function(e){
+                    const rect = el.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    el.style.setProperty('--x', x + 'px');
+                    el.style.setProperty('--y', y + 'px');
+                });
+            });
+        }
+        attachRipplePositioning('.btn');
+        attachRipplePositioning('.fab');
+    </script>
+</body>
+</html>
